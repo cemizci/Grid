@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@300;500;600&family=Poppins:wght@100;300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #edf2f8;
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 100px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.card:nth-child(3) {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+
+.card:nth-child(4) {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+img {
+  border-radius: 30px;
+  border: 3px solid #996ae9;
+}
+
+h3 {
+  opacity: 70%;
+  font-size: 20px;
+}
+
+h4 {
+  opacity: 30%;
+  margin-top: -20px;
+}
+
+h3,
+h4 {
+  margin-left: 10px;
+}
+
+.card-lead {
+  font-size: 18px;
+}
+
+.card-desc {
+  font-size: 12px;
+  opacity: 70%;
+  line-height: 1.4;
+}
+
+.bg-darkwhite {
+  background-color: rgb(247, 255, 246);
+}
+
+.bg-purple {
+  background-color: #6823e0;
+  color: #edf2f8;
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px right 100px;
+}
+
+.bg-white {
+  background-color: #c0d0e4;
+}
+
+.bg-darkblue {
+  background-color: rgb(21, 21, 119);
+  color: #edf2f8;
+}
+
+.bg-gray {
+  background-color: rgb(185, 212, 212);
+}
